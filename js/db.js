@@ -1,11 +1,13 @@
-var db = {
+var db = db || {
     DB: null
 };
 
+// Success callback
 db.successCB = function () {
     return;
 };
 
+// Error callback
 db.errorCB = function (err) {
     console.log("Error processing SQL: " + err.message);
     return;
